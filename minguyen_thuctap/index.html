@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,18 +7,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/customer.css">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
+
 	<div class="home-page">
-		<header>
+		<div class="header">
 			<div class="logo">
 				<a href="#"><img src="img/logo.png"></a>
 			</div>
 			<div class="menu">
-				<div class="bg_menu">
+				<button class="bg-menu">
 					<i class="fa fa-bars btn-icon" aria-hidden="true"></i>
-					<p class="text-menu">Danh Mục</>
+					<p class="text-menu">Danh Mục</p>
+
+				</button>
+				<div class="navigation" id="head">
+					<ul class="menu-content">
+						<li class="title-menu"><a class="txt-link" href="news.html">menu1</a></li>
+						<li class="title-menu" ><a class="txt-link" href="#">menu2</li>
+						<li class="title-menu" ><a class="txt-link" href="#">menu3</li>
+					</ul>
 				</div>
 			</div>
 			<div class="search">
@@ -28,15 +41,15 @@
 			</div>
 			<div class="mxh">
 				<a href="#"><img src="img/iconfacebook.png"></a>
-				<a href="#"><img class="btn_icon" src="img/icongoogle.png"></a>
-				<a href="#"><img class="btn_icon" src="img/icontw.png"></a>
-				<a href="#"><img class="btn_icon" src="img/iconin.png"></a>
+				<a href="#"><img class="btn-icon" src="img/icongoogle.png"></a>
+				<a href="#"><img class="btn-icon" src="img/icontw.png"></a>
+				<a href="#"><img class="btn-icon" src="img/iconin.png"></a>
 			</div>
-		</header>
+		</div>
 		<div class="title-new">
 			<div class="br-title">
 				<h4 class="news-title fs13 fontU">Tin mới nhất</h4>
-				<div class="content_title">
+				<div class="content-title">
 					<div class="content">
 						<div class="time fs13">
 							<p >2 phút trước</p>
@@ -57,20 +70,22 @@
 							</a>
 						</p>
 					</div>
-					<div class="content pading-title">
+					<div class="content">
 						<div class="time fs13">
 							<p >15/12/2014</p>
 						</div>
-						<p class="text-time fs13">Giá vàng dè dặt giảm theo thế giới ,USD hạ nhiệt</p>
+						<p class="text-time fs13">
+							<a class="txt-link " href="#">Giá vàng dè dặt giảm theo thế giới ,USD hạ nhiệt</a>
+						</p>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="slider mgt30">
 			<div class="content-slider">
-				<div class="item-slider" style="background: url(img/slider1.png) no-repeat;">
+				<div class="item-slider" style="background-image: url(img/content.png);">
 					<a class="txt-link" href="#">
-						<img class="img-slider" src="img/slider1.png" alt="slider1">
+						<img class="img-article" src="img/slider1.png" alt="slider1">
 					</a>
 					<div class="pos-slider">
 						<p class="titles fs13 bgB "><a class="colorW" href="#">Công nghệ</a></p>
@@ -87,10 +102,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="content-slider">
-				<div class="item-slider" style="background: url(img/slider2.png) no-repeat;">
+			<div class="content-slider ">
+				<div class="item-slider" style="background-image: url(img/slider2.png);">
 					<a class="txt-link" href="#">
-						<img class="img-slider" src="img/slider2.png" alt="slider2">
+						<img class="img-article" src="img/slider2.png" alt="slider2">
 					</a>
 					<div class="pos-slider">
 						<p class="titles fs13 bgth"><a class="colorW" href="#">Giải trí</a></p>
@@ -107,10 +122,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="content-slider">
-				<div class="item-slider" style="background: url(img/slider3.png) no-repeat;">
+			<div class="content-slider ">
+				<div class="item-slider" style="background-image: url(img/slider3.png);">
 					<a class="txt-link" href="#">
-						<img class="img-slider" src="img/slider3.png" alt="slider3">
+						<img class="img-article" src="img/slider3.png" alt="slider3">
 					</a>
 					<div class="pos-slider">
 						<p class="titles fs13 bgG"><a class="colorW" href="#">Đời sống</a></p>
@@ -127,10 +142,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="content-slider">
-				<div class="item-slider" style="background: url(img/slider4.png) no-repeat;">
+			<div class="content-slider ">
+				<div class="item-slider" style="background-image: url(img/slider4.png);">
 					<a class="txt-link" href="#">
-						<img class="img-slider" src="img/slider4.png" alt="slider4">
+						<img class="img-article" src="img/slider4.png" alt="slider4">
 					</a>
 					<div class="pos-slider">
 						<p class="titles fs13 bgB"><a class="colorW" href="#">Thể thao</a></p>
@@ -147,10 +162,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="content-slider">
-				<div class="item-slider" style="background: url(img/slider5.png) no-repeat;">
+			<div class="content-slider ">
+				<div class="item-slider" style="background-image: url(img/slider5.png);">
 					<a class="txt-link" href="#">
-						<img class="img-slider" src="img/slider5.png" alt="slider5">
+						<img class="img-article" src="img/slider5.png" alt="slider5">
 					</a>
 					<div class="pos-slider">
 						<p class="titles fs13 bgbr">
@@ -171,6 +186,7 @@
 					</div>
 				</div>
 			</div>
+			
 		</div>
 		<div class="main-content mgt30">
 			<div class="left-main">
@@ -247,7 +263,7 @@
 									</a>
 								</div>
 								<div class="nd-cate">
-									<p class="text-cate color-red"><a class="color-red" href="#">Tin tức</a></p>
+									<p class="text-cate hv-red"><a class="hv-red" href="#">Tin tức</a></p>
 									<h4 class="title-cates fs15"><a class="txt-link" href="#">Không có người việt trong vụ bắt giử con tim tai Sydny</a></h4>
 								</div>
 							</div>
@@ -258,7 +274,7 @@
 									</a>
 								</div>
 								<div class="nd-cate">
-									<p class="text-cate color-blue"><a class="color-blue" href="#">Tin thế giới</a></p>
+									<p class="text-cate hv-blue"><a class="hv-blue" href="#">Tin thế giới</a></p>
 									<h4 class="title-cates fs15"><a class="txt-link" href="#">Lãnh đạo Hong Kong tuyên bố biểu tình chấm dứt</a></h4>
 								</div>
 							</div>
@@ -282,7 +298,7 @@
 									</a>
 								</div>
 								<div class="nd-cate">
-									<p class="text-cate color-bluen"><a class="color-bluen" href="#">Sức khỏe</a></p>
+									<p class="text-cate hv-bluen"><a class="hv-bluen" href="#">Sức khỏe</a></p>
 									<h4 class="title-cates fs15"><a class="txt-link" href="#">Dấu hiệu cho thấy bạn có hệ miễn dịch yếu ớt</a></h4>
 								</div>
 							</div>
@@ -293,7 +309,7 @@
 									</a>
 								</div>
 								<div class="nd-cate">
-									<p class="text-cate color-sky"><a class="color-sky" href="#">Tin thế giới</a></p>
+									<p class="text-cate hv-sky"><a class="hv-sky" href="#">Tin thế giới</a></p>
 									<h4 class="title-cates fs15"><a class="txt-link" href="#">Chồng thường dọa ly hôn khi vợ chồng cãi nhau</a></h4>
 								</div>
 							</div>
@@ -317,7 +333,7 @@
 									</a>
 								</div>
 								<div class="nd-cate">
-									<p class="text-cate color-brick"><a class="color-brick" href="#">Sản phẩm</a></p>
+									<p class="text-cate hv-brick"><a class="hv-brick" href="#">Sản phẩm</a></p>
 									<h4 class="title-cates fs15"><a class="txt-link" href="#">5 Smart phone Android đối thủ của iphone 6</a></h4>
 								</div>
 							</div>
@@ -328,7 +344,7 @@
 									</a>
 								</div>
 								<div class="nd-cate">
-									<p class="text-cate color-blue"><a class="color-blue" href="#">Công nghệ </a></p>
+									<p class="text-cate hv-blue"><a class="hv-blue" href="#">Công nghệ </a></p>
 									<h4 class="title-cates fs15"><a class="txt-link" href="#">Thị phần điện thoại của Sam sung giảm đáng kể trong quý 3</a></h4>
 								</div>
 							</div>
@@ -354,7 +370,7 @@
 									</a>
 								</div>
 								<div class="nd-cate">
-									<p class="text-cate color-blue"><a class="color-blue"  href="#">Doanh nghiệp</a></p>
+									<p class="text-cate hv-blue"><a class="hv-blue"  href="#">Doanh nghiệp</a></p>
 									<h4 class="title-cates fs15"><a class="txt-link" href="#">Locogi được bán 35% cổ phần cho nhà đầu tư chiến lược</a></h4>
 								</div>
 							</div>
@@ -365,7 +381,7 @@
 									</a>	
 								</div>
 								<div class="nd-cate">
-									<p class="text-cate color-brick"><a class="color-brick href="#">PR Doanh nghiệp</a></p>
+									<p class="text-cate hv-brick"><a class="hv-brick" href="#">PR Doanh nghiệp</a></p>
 									<h4 class="title-cates fs15"><a class="txt-link" href="#">Viettel sắp đầu tư 800 triệu USD vào Malaysia</a></h4>
 								</div>
 							</div>
@@ -389,7 +405,7 @@
 									</a>
 								</div>
 								<div class="nd-cate">
-									<p class="text-cate color-blue"><a class="color-blue"  href="#">Bóng đá</a></p>
+									<p class="text-cate hv-blue"><a class="hv-blue"  href="#">Bóng đá</a></p>
 									<h4 class="title-cates fs15"><a class="txt-link" href="#">5 cơ sở để Man Utd nuôi mộng vô địch ở Ngoại Hạng Anh</a></h4>
 								</div>
 							</div>
@@ -400,7 +416,7 @@
 									</a>
 								</div>
 								<div class="nd-cate">
-									<p class="text-cate color-bluen"><a class="color-bluen href="#">Tennis</a></p>
+									<p class="text-cate hv-bluen"><a class="hv-bluen" href="#">Tennis</a></p>
 									<h4 class="title-cates fs15"><a class="txt-link" href="#">Mourinho: 'Lampard sẻ là trợ lực nếu ở lại Chelsea'</a></h4>
 								</div>
 							</div>
@@ -424,7 +440,7 @@
 									</a>
 								</div>
 								<div class="nd-cate">
-									<p class="text-cate color-pink"><a class="color-pink"  href="#">Giới sao</a></p>
+									<p class="text-cate hv-pink"><a class="hv-pink"  href="#">Giới sao</a></p>
 									<h4 class="title-cates fs15"><a class="txt-link" href="#">Hang loạt sao Hollywood bị nói xấu trong loạt mail rò rỉ</a></h4>
 								</div>
 							</div>
@@ -435,7 +451,7 @@
 									</a>
 								</div>
 								<div class="nd-cate">
-									<p class="text-cate color-bluen"><a class="color-bluen"  href="#">Giới sao</a></p>
+									<p class="text-cate hv-bluen"><a class="hv-bluen"  href="#">Giới sao</a></p>
 									<h4 class="title-cates fs15"><a class="txt-link" href="#">Hang loạt sao Hollywood bị nói xấu trong loạt mail rò rỉ</a></h4>
 								</div>
 							</div>
@@ -443,28 +459,44 @@
 					</div>
 				</div>
 				<div class="content-video mgt30">
-					<div class="video">
-						<div class="item-video" style="background: url(img/video.png) no-repeat;">
-							<a class="txt-link" href="#">
-								<img class="img-article" src="img/video.png">
-							</a>
+					<div class="cate-video">
+						<div class="video">
+							<div class="slick-video">
+								<div class="item-video" style="background: url(img/video.png) no-repeat;">
+									<a class="txt-link" href="#">
+										<img class="img-article" src="img/video.png">
+									</a>
+								</div>
+								<div class="caption">
+									<h4 class="title-video"><a class="txt-link" href="#">Chế biến và ăn mực sống theo phong cách Hàn Quốc</a></h4>
+									<p class="text-video fs15">
+										Món sup kimchi theo phong cách Hàn Quốc luôn rất cay và nồng, chị em hãy làm cho món ăn trở nên Việt Nam và hợp khẩu vị với gia đình
+									</p>
+									<div class="page">
+										<p>2 trong 16</p>
+									</div>
+								</div>
+							</div>
+							<div class="slick-video">
+								<div class="item-video" style="background: url(img/lefttintuc3.png) no-repeat;">
+									<a class="txt-link" href="#">
+										<img class="img-article" src="img/video.png">
+									</a>
+								</div>
+								<div class="caption">
+									<h4 class="title-video"><a class="txt-link" href="#">Chế biến và ăn mực sống theo phong cách Hàn Quốc</a></h4>
+									<p class="text-video fs15">
+										Món sup kimchi theo phong cách Hàn Quốc luôn rất cay và nồng, chị em hãy làm cho món ăn trở nên Việt Nam và hợp khẩu vị với gia đình
+									</p>
+									<div class="page">
+										<p>2 trong 16</p>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="caption">
-							<h4 class="title-video"><a class="txt-link" href="#">Chế biến và ăn mực sống theo phong cách Hàn Quốc</a></h4>
-							<p class="text-video fs15">
-								Món sup kimchi theo phong cách Hàn Quốc luôn rất cay và nồng, chị em hãy làm cho món ăn trở nên Việt Nam và hợp khẩu vị với gia đình
-							</p>
-							<div class="page posBL">
-								<p>2 trong 16</p>
-							</div>
-							<div class="btn-icon">
-								<a href="#">
-									<i class="fa fa-chevron-left left" aria-hidden="true"></i>
-								</a>
-								<a href="#">
-									<i class="fa fa-chevron-right right" aria-hidden="true"></i>
-								</a>
-							</div>
+						<div class="next-prev">
+							<i class="fa fa-chevron-left left" aria-hidden="true"></i>
+							<i class="fa fa-chevron-right right" aria-hidden="true"></i>
 						</div>
 					</div>
 					<div class="video-lq">
@@ -682,136 +714,138 @@
 							</div>
 						</div>
 					</div>
-
-				</div>
-			</div>
-			<div class="footer">
-				<div class="left">
-					<div class="top">
-						<ul class="tl-footer">
-							<li class="title-foot fontU fontW fs15"><a class="txt-link" href="#">Tin tức</a>
-								<ul >
-									<li class="text-foot fs14"><a class="txt-link" href="#">Tin nóng</a></li>
-									<li class="text-foot fs14"><a class="txt-link" href="#">Tin Vn</a></li>
-									<li class="text-foot fs14"><a class="txt-link" href="#">Tin Cộng đồng</a></li>
-									<li class="text-foot fs14"><a class="txt-link" href="#">Tin thế giới</a></li>
-								</ul>
-							</li>
-						</ul>
-						<ul class="tl-footer">
-							<li class="title-foot fontU fontW fs15"><a class="txt-link" href="#">Kinh doanh</a>
-								<ul >
-									<li class="text-foot fs14"><a class="txt-link" href="#">Doanh nghiệp</a></li>
-									<li class="text-foot fs14"><a class="txt-link" href="#">PR Doanh Nghiệp</a></li>
-								</ul>
-							</li>
-						</ul>
-						<ul class="tl-footer">
-							<li class="title-foot fontU fontW fs15"><a class="txt-link" href="#">Đời sống</a>
-								<ul >
-									<li class="text-foot fs14"><a class="txt-link" href="#">Sức khỏe</a></li>
-									<li class="text-foot fs14"><a class="txt-link" href="#">Gia đình</a></li>
-									<li class="text-foot fs14"><a class="txt-link" href="#">Mẹ & bé</a></li>
-								</ul>
-							</li>
-						</ul>
-						<ul class="tl-footer">
-							<li class="title-foot fontU fontW fs15"><a class="txt-link" href="#">Thể thao</a>
-								<ul >
-									<li class="text-foot fs14"><a class="txt-link" href="#">Bóng đáng</a></li>
-									<li class="text-foot fs14"><a class="txt-link" href="#">Tennis</a></li>
-									<li class="text-foot fs14"><a class="txt-link" href="#">Các môn khác</a></li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-					<div class="bottom pdt20">
-						<ul class="tl-footer">
-							<li class="title-foot fontU fontW fs15"><a class="txt-link" href="#">Công nghệ</a>
-								<ul >
-									<li class="text-foot fs14"><a class="txt-link" href="#">Tin Công nghệ</a></li>
-									<li class="text-foot fs14"><a class="txt-link" href="#">Sản phẩm</a></li>
-								</ul>
-							</li>
-						</ul>
-						<ul class="tl-footer">
-							<li class="title-foot fontU fontW fs15"><a class="txt-link" href="#">Giải trí</a>
-								<ul >
-									<li class="text-foot fs14"><a class="txt-link" href="#">Game</a></li>
-									<li class="text-foot fs14"><a class="txt-link" href="#">Mussic</a></li>
-									<li class="text-foot fs14"><a class="txt-link" href="#">Celebrity</a></li>
-								</ul>
-							</li>
-						</ul>
-						<ul class="tl-footer">
-							<li class="title-foot fontU fontW fs15"><a class="txt-link" href="#">Phong thủy tử vi</a>
-								<ul >
-									<li class="text-foot fs14"><a class="txt-link" href="#">Phong thủy đời sống</a></li>
-									<li class="text-foot fs14"><a class="txt-link" href="#">Xem tử vi</a></li>
-									<li class="text-foot fs14"><a class="txt-link" href="#">Lịch hoàng đạo</a></li>
-								</ul>
-							</li>
-						</ul>
-						<ul class="tl-footer">
-							<li class="title-foot fontU fontW fs15"><a class="txt-link" href="#">Giải pháp doanh nghiệp</a>
-								<ul >
-									<li class="text-foot fs14"><a class="txt-link" href="#">Nhận diện thương hiệu</a></li>
-									<li class="text-foot fs14"><a class="txt-link" href="#">Tư vấn IT</a></li>
-									<li class="text-foot fs14"><a class="txt-link" href="#">Phát triển & Thiết kế web</a>
-									</li>
-									<li class="text-foot fs14"><a class="txt-link" href="#">E-comerce</a></li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="right">
-					<div class="top">
-						<h4 class="title-right">Danh mục khác</h4>
-						<div class="text">
-							<p class="font">
-								<a class="txt-link" href="#">
-									<i class="fa fa-user-circle-o btn-icon" aria-hidden="true"></i>Kết bạn- Dating
-								</a>
-							</p>
-							<p class="font">
-								<a class="txt-link" href="#">
-									<i class="fa fa-lightbulb-o btn-icons" aria-hidden="true"></i>Ý tưởng khởi nghiệp - Start-up
-								</a>
-							</p>
-							<p class="font">
-								<a class="txt-link" href="#">
-									<i class="fa fa-bullhorn btn-icon" aria-hidden="true"></i> Quảng cáo
-								</a>
-							</p>
-						</div>
-					</div>
-					<div class="scroll-foot">
-						<p class="scroll fontW fs14 colorBl">
-							Về đầu trang <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
-						</p>
-					</div>
-					<div class="adver-foot" style="background: url(img/quangcao_f1.png) no-repeat;">
-						<a href="#">
-							<img class="img-article" src="img/quangcao_f1.png">
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="bottom">
-				<div class="logo">
-					<img src="img/footer.png">
-				</div>
-				<div class="text_1">
-					<p>&copy; Copyright 2011 <span class="VietHome fs14">VietHome.today</span> All right reverved.</p>
-					<p>&copy; VietHome giử bản quyền nội dung trên website này.</p>
-				</div>
-				<div class="text_2">
-					Phát triển bởi: <span class="color-green ">Toàn cầu xanh</span>
 				</div>
 			</div>
 		</div>
-
+		<div class="footer">
+			<div class="left">
+				<div class="top">
+					<ul class="tl-footer">
+						<li class="title-foot fontU fontW fs15"><a class="txt-link" href="#">Tin tức</a>
+							<ul >
+								<li class="text-foot fs14"><a class="txt-link" href="#">Tin nóng</a></li>
+								<li class="text-foot fs14"><a class="txt-link" href="#">Tin Vn</a></li>
+								<li class="text-foot fs14"><a class="txt-link" href="#">Tin Cộng đồng</a></li>
+								<li class="text-foot fs14"><a class="txt-link" href="#">Tin thế giới</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="tl-footer">
+						<li class="title-foot fontU fontW fs15"><a class="txt-link" href="#">Kinh doanh</a>
+							<ul >
+								<li class="text-foot fs14"><a class="txt-link" href="#">Doanh nghiệp</a></li>
+								<li class="text-foot fs14"><a class="txt-link" href="#">PR Doanh Nghiệp</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="tl-footer">
+						<li class="title-foot fontU fontW fs15"><a class="txt-link" href="#">Đời sống</a>
+							<ul >
+								<li class="text-foot fs14"><a class="txt-link" href="#">Sức khỏe</a></li>
+								<li class="text-foot fs14"><a class="txt-link" href="#">Gia đình</a></li>
+								<li class="text-foot fs14"><a class="txt-link" href="#">Mẹ & bé</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="tl-footer">
+						<li class="title-foot fontU fontW fs15"><a class="txt-link" href="#">Thể thao</a>
+							<ul >
+								<li class="text-foot fs14"><a class="txt-link" href="#">Bóng đáng</a></li>
+								<li class="text-foot fs14"><a class="txt-link" href="#">Tennis</a></li>
+								<li class="text-foot fs14"><a class="txt-link" href="#">Các môn khác</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="bottom pdt20">
+					<ul class="tl-footer">
+						<li class="title-foot fontU fontW fs15"><a class="txt-link" href="#">Công nghệ</a>
+							<ul >
+								<li class="text-foot fs14"><a class="txt-link" href="#">Tin Công nghệ</a></li>
+								<li class="text-foot fs14"><a class="txt-link" href="#">Sản phẩm</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="tl-footer">
+						<li class="title-foot fontU fontW fs15"><a class="txt-link" href="#">Giải trí</a>
+							<ul >
+								<li class="text-foot fs14"><a class="txt-link" href="#">Game</a></li>
+								<li class="text-foot fs14"><a class="txt-link" href="#">Mussic</a></li>
+								<li class="text-foot fs14"><a class="txt-link" href="#">Celebrity</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="tl-footer">
+						<li class="title-foot fontU fontW fs15"><a class="txt-link" href="#">Phong thủy tử vi</a>
+							<ul >
+								<li class="text-foot fs14"><a class="txt-link" href="#">Phong thủy đời sống</a></li>
+								<li class="text-foot fs14"><a class="txt-link" href="#">Xem tử vi</a></li>
+								<li class="text-foot fs14"><a class="txt-link" href="#">Lịch hoàng đạo</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="tl-footer">
+						<li class="title-foot fontU fontW fs15"><a class="txt-link" href="#">Giải pháp doanh nghiệp</a>
+							<ul >
+								<li class="text-foot fs14"><a class="txt-link" href="#">Nhận diện thương hiệu</a></li>
+								<li class="text-foot fs14"><a class="txt-link" href="#">Tư vấn IT</a></li>
+								<li class="text-foot fs14"><a class="txt-link" href="#">Phát triển & Thiết kế web</a>
+								</li>
+								<li class="text-foot fs14"><a class="txt-link" href="#">E-comerce</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="right">
+				<div class="top">
+					<h4 class="title-right">Danh mục khác</h4>
+					<div class="text">
+						<p class="font">
+							<a class="txt-link" href="#">
+								<i class="fa fa-user-circle-o btn-icon" aria-hidden="true"></i>Kết bạn- Dating
+							</a>
+						</p>
+						<p class="font">
+							<a class="txt-link" href="#">
+								<i class="fa fa-lightbulb-o btn-icons" aria-hidden="true"></i>Ý tưởng khởi nghiệp - Start-up
+							</a>
+						</p>
+						<p class="font">
+							<a class="txt-link" href="#">
+								<i class="fa fa-bullhorn btn-icon" aria-hidden="true"></i> Quảng cáo
+							</a>
+						</p>
+					</div>
+				</div>
+				<div class="scroll-foot">
+					<p class="scroll fontW fs14 colorBl">
+						Về đầu trang <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+					</p>
+				</div>
+				<div class="adver-foot" style="background: url(img/quangcao_f1.png) no-repeat;">
+					<a href="#">
+						<img class="img-article" src="img/quangcao_f1.png">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="logo" style="background:url(img/footer.png) no-repeat; ">
+				<img class="img-article" src="img/footer.png">
+			</div>
+			<div class="text_1">
+				<p>&copy; Copyright 2011 <span class="colorBl fs14">VietHome.today</span> All right reverved.</p>
+				<p>&copy; VietHome giử bản quyền nội dung trên website này.</p>
+			</div>
+			<div class="text_2">
+				Phát triển bởi: <span class="color-green ">Toàn cầu xanh</span>
+			</div>
+		</div>
 	</div>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/slick.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	
 </body>
 </html>
